@@ -1,34 +1,49 @@
-**Scenario:** Graphing Users' Social Network
+# 🧭 Career Compass — AI Career Advisor
 
-**Narrative:** The user engages in a casual conversation with Career Compass, sharing recent social interactions. The LLM extracts names, relationship details, and social dynamics to build a personalized ego network. This network helps the user identify potential career allies—mentors, collaborators, or referral sources—based on relationship strength, shared interests, and professional relevance.
+## Idea Pitch
+Career Compass is an AI-powered career advisor that helps individuals navigate transitions, skill development, and job market opportunities. Using large language models (LLMs), it synthesizes information from job listings, resumes, and skill taxonomies to provide personalized insights. The tool offers resume feedback, skill-gap identification, learning-path recommendations, and mock interview simulations. Unlike static quizzes or keyword job boards, Career Compass holds a reflective conversation to help users craft a coherent professional narrative linking experiences to goals. With a persistent user profile and structured prompts, it delivers targeted suggestions and artifacts (cover letters, interview prep, achievement bullets) that evolve with user input, ultimately reducing uncertainty and accelerating progress toward desired roles.
 
-**Step-by-Step Interaction**
-- User shares stories about recent social interactions
-- LLM extracts entities (names, roles, organizations)
-- Follow-up questions clarify relationship details and the depth of the connection
-- Career relevance scored ("How well does the connection's experience aid the user's?")
-- Suggestions offered ("Ask ___ for a portfolio review”, "Is there anyone else ____ can connect you to?").
-- Session summary includes updated graph and actionable career suggestions.
+## Target Users
+- **Primary:** College students and early-career professionals exploring or switching paths  
+- **Secondary:** Mid-career upskillers and return-to-work candidates  
+- **Context:** Unclear goals, time-constrained, need motivation + structure
 
-**Data Description:**
-Data Needed
-- User profile (career goals, industries, skills)
-- Chat transcript (free-text input)
-- Consent and privacy settings
-- Relationship heuristics (Helps to identify the depth of relationships)
+## What the Application Will Do (Detailed)
+1. **Conversational Coaching:** clarify goals, surface strengths, and reframe experiences
+2. **Profile & Skill Extraction:** parse resumes/LinkedIn text to structured skills & achievements
+3. **Recommendations:** roles to explore, learning paths, projects/portfolio ideas
+4. **Artifacts:** resume line rewrites, tailored cover letters, outreach messages
+5. **Interview Prep:** mock interviews with adaptive follow-ups and rubric-based feedback
+6. **Progress Tracking:** goals, skills, and checkpoints; feedback prompts to refine results
 
-**Data Created:**
+## Data Needed
+- **From users:** resume/job history text, goals, industries, skill self-ratings, geographic/constraints
+- **From web/other:** job descriptions, skill frameworks (e.g., O*NET), learning resources metadata
+- **Handling:** store session/profile locally or in a small DB; prompt-time retrieval; allow export/delete
 
-- Career relevance scores
-- Suggested actions (e.g., outreach drafts, meeting prompts)
-- Logs of data histories
-  
-**Evaluation:**
-- Success Criteria
-- Accurate information extraction and relationship inference
-- Relevant career suggestions based on network insights
+## Role of LLMs
+- Extract structured skills/achievements from unstructured text
+- Generate personalized plans, artifacts (cover letters, bullets), and interview questions
+- Conduct reflective coaching dialogue; adapt tone; summarize progress
+- Tool-use to call retrieval/parsers for resumes, jobs, and learning resources
 
-**Potential Complications:**
-- Ambiguous names or roles
-- Sparse data or ambiguous users
-- Sensitive relationships requiring discretion
+## Differentiation
+- **Vs. non-LLM systems:** goes beyond keyword matching with nuanced, conversational profiling and artifact generation
+- **Vs. general LLMs:** persistent profile + domain prompts + guardrails + evaluation rubrics → consistent, task-specific outputs
+
+---
+
+# Usage Scenarios
+
+### Scenario A — Short Description
+“From resume dump to skill map & target roles”
+
+**Narrative**  
+User pastes a messy resume and says they’re curious about data roles. The app extracts skills, highlights gaps, suggests beginner-friendly titles (e.g., Data Analyst, BI Analyst), and proposes a 6-week learning path with resources and a capstone mini-project. It also rewrites two resume bullets to better reflect impact.
+
+**Step by Step**
+- User uploads/pastes resume text + goal (“interested in data roles”)
+- LLM parses achievements/skills → creates structured profile
+- App compares to role templates → suggests target roles + gaps
+- App generates learning path + mini-project + two improved bullets
+- User gives 1–5 ratings; app stores feedback + updates plan
