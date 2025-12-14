@@ -15,3 +15,7 @@ Final Group Project COMM 4190
 3aitalia_full_prompt
 3alex_full_prompt
 3ray_full_prompt
+
+**Milestone 5** - App Workflow and Testing
+5All_Workflows_and_Tests
+resume.txt - sample resume to tests scenarios 1 & 3

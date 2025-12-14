@@ -18,4 +18,4 @@ Final Group Project COMM 4190
 
 **Milestone 5** - App Workflow and Testing
 5All_Workflows_and_Tests
-resume.txt - cample resume to tests scenarios 1 & 3
+resume.txt - sample resume to tests scenarios 1 & 3
