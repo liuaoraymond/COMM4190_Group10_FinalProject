@@ -1,5 +1,4 @@
-# comm4190_F25_Final_Project
-Final Group Project COMM 4190
+Career Compass - LLM Career Advisory System
 
 **Milestone 1** - Ideas
 1aitalia_idea
@@ -19,3 +18,5 @@ Final Group Project COMM 4190
 **Milestone 5** - App Workflow and Testing
 5All_Workflows_and_Tests
 resume.txt - sample resume to tests scenarios 1 & 3
+
+![Logo](https://github.com/user-attachments/assets/bbd0db01-0bcb-4ce2-81ab-85ea84e98211)
