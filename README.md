@@ -3,6 +3,7 @@ Career Compass - LLM Career Advisory System
 **Milestone 1** - Ideas
 1aitalia_idea
 1alex_idea
+1raymond_idea
 
 **Milestone 2** - Usage Scenarios
 2Aitalia_Milestone2-Copy1
